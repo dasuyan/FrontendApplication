@@ -1,9 +1,9 @@
-var api = "https://api-a9kr-dev.fl0.io"//process.env.API_GATEWAY // get the API Gateway from the environment
+var api = process.env.API_GATEWAY // get the API Gateway from the environment
 
 $(document).ready(function() {
     $("#btn").click(function() {
         $.ajax({
-            url: "https://api-a9kr-dev.fl0.io/api/randomquote",
+            url: api + "/api/randomquote",
             type: "GET",
             dataType: "json",
             timeout: 3000,
